@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131</title>
+    <meta name="description" content="Franco Maximiliano Chumba Perez's website based on WDD 131 - Dynamic Web Fundamentals lessons and requirements using HTML, CSS and JavaScript fundamentals">
+    <meta name="author" content="Franco Chumba">
+    <title>WDD 131 - Dynamic Web Fundamentals - Franco Chumba</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/francochumba">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=eng">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Franco Chumba</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.webp" alt="Photo of me">
+            <p>
+                My name is Franco Chumba. I am currently studying software development online at BYU–Idaho. I am 23 years old, and I enjoy movies and music. I am excited about learning new skills and building a strong future in technology.
+            </p>
+        </section>
+        <section class="card">
+            <h2>Rancagua, Chile</h2>
+            <img src="images/rancagua.webp" alt="Photo of the city Rancagua">
+            <p>
+                Rancagua is a city located in central Chile, about 87 kilometers south of Santiago. It is the capital of the O'Higgins Region and is well known for its strong connection to Chile's mining history, especially the nearby "El Teniente" copper mine, one of the largest underground copper mines in the world. The city has a warm Mediterranean climate, making it a productive agricultural area, and it is surrounded by vineyards, farms, and beautiful countryside. Rancagua also holds historical importance as the site of the Battle of Rancagua in 1814, a key event in Chile's fight for independence.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>| Franco Chumba | VI Region, Chile
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
