@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chile</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Chile</h1>
+</header>
+<main>
+    <section class="hero">
+        <picture>
+            <source srcset="images/paine_large.webp" media="(min-width: 900px)">
+            <source srcset="images/paine_medium.webp" media="(min-width: 500px)">
+            <img src="images/paine_small.webp" alt="Landscape of Torres del Paine, Chile">
+        </picture>
+    </section>
+    <section class="info">
+        <h2>About</h2>
+        <p>Chile is a long and narrow country located along the western coast of South America.</p>
+    </section>
+    <section class="weather">
+        <h2 class="weather-title">Weather</h2>
+        <img src="images/weather_icon.svg" alt="Weather icon" class="weather-icon">
+        <p>Temperature: <span id="temp">8</span> °C</p>
+        <p>Wind Speed: <span id="speed">10</span> km/h</p>
+        <p>Wind Chill: <span id="windchill"></span></p>
+    </section>
+</main>
+<footer>
+    <p>© <span id="year"></span> | Last Modified: <span id="modified"></span></p>
+</footer>
+</body>
+</html>

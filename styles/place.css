@@ -1,0 +1,53 @@
+:root {
+  --primary: #0033a0;
+  --secondary: #d52b1e;
+  --bg: #ffffff;
+  --text: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary);
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+main {
+  padding: 1rem;
+}
+
+.weather-icon {
+  width: 60px;
+}
+
+@media (min-width: 700px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .hero {
+    grid-column: 1 / -1;
+  }
+
+  .weather-title::after {
+    content: " ⛅";
+  }
+
+  .weather-icon {
+    display: none;
+  }
+}
