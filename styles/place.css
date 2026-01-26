@@ -1,6 +1,6 @@
 :root {
     --primary: #8F0000;
-    --secondary: #1b8ed0;
+    --secondary: #4FB0E8;
     --background: #ffffff;
     --text: #000000;
 }
@@ -52,7 +52,7 @@ main {
     background: var(--background);
     padding: 1rem;
     border-top: 1px solid var(--secondary);
-    border-radius: none;
+    border-radius: 0px;
     
 }
 
@@ -104,7 +104,7 @@ main {
 
     .weather-icon {
         display: none;
-        margin: none;
+        margin: 0px;
         max-width: 0px;
     }
 }
