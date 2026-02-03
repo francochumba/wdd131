@@ -1,0 +1,74 @@
+:root {
+    --primary: #1f2933;
+    --secondary: #f5f7fa;
+    --accent: #2563eb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+nav button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: var(--accent);
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    opacity: 0.9;
+}
+
+.temple-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.temple-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.temple-card h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
