@@ -28,17 +28,20 @@ nav {
     margin-top: 1rem;
 }
 
-nav button {
+nav a {
     padding: 0.5rem 1rem;
-    border: none;
     background-color: var(--accent);
-    color: #ffffff;
-    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
     border-radius: 5px;
+    display: inline-block;
+    margin: 0 0.2rem;
+    transition: opacity 0.3s, background-color 0.3s;
 }
 
-nav button:hover {
+nav a:hover {
     opacity: 0.9;
+    background-color: #333;
 }
 
 .temple-grid {
@@ -46,6 +49,8 @@ nav button:hover {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1rem;
     padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .temple-card {
@@ -58,7 +63,8 @@ nav button:hover {
 
 .temple-card img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
     border-radius: 5px;
 }
 
@@ -71,4 +77,25 @@ footer {
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .temple-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0.25rem 0;
+    }
 }
