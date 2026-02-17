@@ -324,4 +324,14 @@ footer a:hover {
     .example-card figcaption {
         font-size: 0.8rem;  
     }
+
+    nav ul {
+        gap: 0.8rem;       
+        justify-content: space-around;
+        flex-wrap: wrap;    
+    }
+    nav a {
+        font-size: 0.9rem; 
+        padding: 0.4rem 0;
+    }
 }
