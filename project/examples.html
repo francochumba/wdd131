@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Interactive C# examples for beginners.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Franco Chumba">
+    <title>C# Examples - C# Programming Basics Guide</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>C# Programming Basics Guide</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="concepts.html">Concepts</a></li>
+            <li><a href="examples.html" class="active">Examples</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="example">
+    <label for="exampleSelector">Choose a C# example:</label>
+    <select id="exampleSelector">
+        <option value="">--------</option>
+        <option value="class">Class Example</option>
+        <option value="method">Method Example</option>
+        <option value="abstraction">Abstraction Example</option>
+        <option value="encapsulation">Encapsulation Example</option>
+    </select>
+    </section>
+
+    <section class="examples-section">
+        <div class="example-card" id="example-class">
+            <h3>Class Example</h3>
+            <p>This code defines a class named Person with a property called Name. In the Main method, a new Person object is created, its Name is assigned the value "Alice", and the program prints the name to the console.</p>
+            <figure>
+                <img src="images/class-code.webp" alt="Class code example">
+                <figcaption>Class definition in Visual Studio</figcaption>
+            </figure>
+            <figure>
+                <img src="images/class-output.webp" alt="Class output example">
+                <figcaption>Program output</figcaption>
+            </figure>
+        </div>
+
+        <div class="example-card" id="example-method">
+            <h3>Method Example</h3>
+            <p>This code defines a class Person with a method called Speak. The method prints "Hello!" to the console when called.</p>
+            <figure>
+                <img src="images/method-code.webp" alt="Method code example">
+                <figcaption>Method implementation</figcaption>
+            </figure>
+            <figure>
+                <img src="images/method-output.webp" alt="Method output example">
+                <figcaption>Program output</figcaption>
+            </figure>
+        </div>
+
+        <div class="example-card" id="example-abstraction">
+            <h3>Abstraction Example</h3>
+            <p>This code defines an abstract class Animal with an abstract method MakeSound. A derived class Dog implements this method and prints "Bark".</p>
+            <figure>
+                <img src="images/abstraction-code.webp" alt="Abstraction code example">
+                <figcaption>Abstract class implementation</figcaption>
+            </figure>
+            <figure>
+                <img src="images/abstraction-output.webp" alt="Abstraction output example">
+                <figcaption>Program output</figcaption>
+            </figure>
+        </div>
+
+        <div class="example-card" id="example-encapsulation">
+            <h3>Encapsulation Example</h3>
+            <p>This code defines a private variable age inside the Person class and provides public methods SetAge and GetAge to modify and retrieve its value.</p>
+            <figure>
+                <img src="images/encapsulation-code.webp" alt="Encapsulation code example">
+                <figcaption>Encapsulation implementation</figcaption>
+            </figure>
+            <figure>
+                <img src="images/encapsulation-output.webp" alt="Encapsulation output example">
+                <figcaption>Program output</figcaption>
+            </figure>
+        </div>
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>© <span id="year"></span> C# Programming Basics Guide</p>
+
+    <a href="references.html">References</a>
+
+</footer>
+
+
+</body>
+</html>

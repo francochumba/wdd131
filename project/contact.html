@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact form for C# Programming Basics Guide.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Franco Chumba">
+    <title>Contact - C# Programming Basics Guide</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>C# Programming Basics Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="concepts.html">Concepts</a></li>
+                <li><a href="examples.html">Examples</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h2>Contact Form</h2>
+            <form id="contactForm">
+
+                <label for="name">Name:</label>
+                <input type="text"
+                       id="name"
+                       name="name"
+                       placeholder="Enter your name"
+                       autocomplete="name"
+
+                       required>
+
+                <label for="email">Email:</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       autocomplete="email"
+                       required>
+
+                <label for="message">Message:</label>
+                <textarea id="message"
+                        name="message"
+                        placeholder="Enter your message"
+                        required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="formResponse" aria-live="polite"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="year"></span> C# Programming Basics Guide</p>
+        <a href="references.html">References</a>
+    </footer>
+</body>
+</html>

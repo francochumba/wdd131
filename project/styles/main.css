@@ -1,0 +1,327 @@
+:root {
+    --primary-color: #963AAE;
+    --secondary-color: #681B7B;
+    --third-color: #dc86f1;
+    --background-color: #f4f7fb;
+    --text-color: #1f2933;
+    --card-background: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h1,
+section h3,
+section p,
+section pre {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.example h2 {
+    text-align: left;
+}
+
+.examples-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.example {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.example:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.example h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #2563eb;
+}
+
+.example-description {
+    margin-bottom: 18px;
+    color: #374151;
+    line-height: 1.5;
+}
+
+.example label[for="exampleSelector"] {
+    font-size: 1.5rem;        
+    font-weight: bold;        
+    display: block;           
+    margin-bottom: 0.5rem;   
+}
+
+.example-card {
+    display: none;
+    background-color: var(--card-background);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.example-card figcaption{
+    margin-top: 1rem;
+}
+
+.example-card figure {
+    margin-top: 1rem;
+}
+
+.example-card img {
+    max-width: 600px;
+    height: auto;
+    border-radius: 6px;
+}
+
+#exampleSelector {
+    font-size: 1rem;
+    padding: 0.6rem  1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto 1rem auto;
+    cursor: pointer;
+}
+
+pre {
+    background-color: #c9c9c9cf;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+code {
+    font-size: 15px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+header h1 {
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--third-color);
+    text-decoration: underline;
+}
+
+nav a.active {
+    color: var(--third-color);
+}
+
+main {
+    padding: 2rem;
+}
+
+main section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.concept {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.core-concepts h2{
+    margin: 1.5rem 1rem 0 1rem;
+}
+
+.card,
+.hero-section,
+form {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    padding: 1rem;
+    min-height: 100px;
+}
+
+.card h3,
+.card p{
+    text-align: center;
+}
+
+.hero-section {
+    padding: 2rem;
+}
+
+.reference-list li {
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.button-container p {
+    margin: 0;
+}
+
+form {
+    padding: 2rem;
+    max-width: 500px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 0.8rem;
+}
+
+form input,
+form textarea {
+    padding: 0.6rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+}
+
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+form button {
+    margin-top: 1rem;
+    align-self: flex-start;
+}
+
+#formResponse {
+    max-width: 500px;
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--third-color);
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 1.2rem;
+    }
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+    form {
+        padding: 1.5rem;
+        margin: 1rem auto;
+    }
+        .example-card img {
+        max-width: 90%;      
+        height: auto;        
+        margin: 0 auto;      
+    }
+
+    .example-card figure {
+        margin-bottom: 1rem; 
+        text-align: center; 
+    }
+
+    .example-card figcaption {
+        font-size: 0.8rem;  
+    }
+}

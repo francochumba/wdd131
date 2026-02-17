@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn C# concepts including classes, methods, encapsulation, and abstraction.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Franco Chumba">
+    <title>C# Concepts - C# Programming Basics Guide</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>C# Programming Basics Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="concepts.html" class="active">Concepts</a></li>
+                <li><a href="examples.html">Examples</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="concept">
+            <h2>Classes</h2>
+            <p>
+                A class is a blueprint used to create objects. It defines properties (data)
+                and methods (actions) that the object can perform. Classes help organize code,
+                improve structure, and make programs reusable.
+            </p>
+            <pre><code class="language-csharp">public class Person
+{
+    public string Name;
+}
+            </code></pre>
+            <p>
+                This example creates a Person class with a Name property.
+            </p>
+        </section>
+
+        <section class="concept">
+            <h2>Methods</h2>
+            <p>
+                A method is a function inside a class that defines an action an object can perform.
+                Methods contain instructions that execute when the method is called.
+            </p>
+            <pre><code class="language-csharp">public class Person
+{
+    public void Speak()
+    {
+        Console.WriteLine("Hello");
+    }
+}
+            </code></pre>
+            <p>
+                This method displays the message "Hello" when it is executed.
+            </p>
+        </section>
+        <section class="concept">
+            <h2>Abstraction</h2>
+            <p>
+                Abstraction is the concept of hiding complex implementation details and showing
+                only the essential features. It allows programmers to focus on what an object does
+                rather than how it works internally.
+            </p>
+            <pre><code class="language-csharp">public abstract class Animal
+{
+    public abstract void MakeSound();
+}
+            </code></pre>
+            <p>
+                This example defines an abstract class that requires subclasses to implement the MakeSound method.
+            </p>
+        </section>
+
+        <section class="concept">
+            <h2>Encapsulation</h2>
+            <p>
+                Encapsulation is the practice of protecting data by restricting direct access
+                to it. Instead, access is controlled through methods. This improves security,
+                control, and program stability.
+            </p>
+            <pre><code class="language-csharp">public class Person
+{
+    private int age;
+
+    public void SetAge(int value)
+    {
+        age = value;
+    }
+}
+            </code></pre>
+            <p>
+                In this example, the age variable is private and can only be changed using the SetAge method.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="year"></span> C# Programming Basics Guide</p>
+        <a href="references.html">References</a>
+    </footer>
+</body>
+</html>
